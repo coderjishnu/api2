@@ -17,19 +17,15 @@ public class SwaggerConfig {
 	@Bean
 	public ApiInfo apiInfo() {
 		ApiInfoBuilder apiBuilder = new ApiInfoBuilder();
-		apiBuilder.title("Api2").version("1.0").license("(c) Product API")
-		.description("Endpoints used in Api2");
+		apiBuilder.title("Api2").version("1.0").license("(c) Springboot").description("Endpoints used in Api2");
 		return apiBuilder.build();
 	}
 
 	@Bean
 	public Docket apiDocket() {
 		return new Docket(DocumentationType.SWAGGER_2).select()
-				.apis(RequestHandlerSelectors
-				.withClassAnnotation(Api.class))
-				.paths(PathSelectors.any()).build()
-				.pathMapping("/").apiInfo(apiInfo())
-				.useDefaultResponseMessages(false);
+				.apis(RequestHandlerSelectors.withClassAnnotation(Api.class)).paths(PathSelectors.any()).build()
+				.pathMapping("/").apiInfo(apiInfo()).useDefaultResponseMessages(false);
 	}
 
 }
