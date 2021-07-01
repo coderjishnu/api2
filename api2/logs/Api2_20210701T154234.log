@@ -1,0 +1,86 @@
+2021-07-01 15:42:36 [main] INFO  com.api2.Api2Application -
+				Starting Api2Application using Java 15.0.2 on DESKTOP-QNMA0KE with PID 9940 (C:\Users\JISHNU\git\api2\api2\target\classes started by JISHNU in C:\Users\JISHNU\git\api2\api2)
+2021-07-01 15:42:36 [main] INFO  com.api2.Api2Application -
+				No active profile set, falling back to default profiles: default
+2021-07-01 15:42:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-01 15:42:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+				Finished Spring Data repository scanning in 175 ms. Found 1 JPA repository interfaces.
+2021-07-01 15:42:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 8080 (http)
+2021-07-01 15:42:42 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-01 15:42:42 [main] INFO  o.a.catalina.core.StandardService -
+				Starting service [Tomcat]
+2021-07-01 15:42:42 [main] INFO  o.a.catalina.core.StandardEngine -
+				Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-07-01 15:42:42 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2021-07-01 15:42:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+				Root WebApplicationContext: initialization completed in 5552 ms
+2021-07-01 15:42:42 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Starting...
+2021-07-01 15:42:43 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Start completed.
+2021-07-01 15:42:44 [main] INFO  o.h.jpa.internal.util.LogHelper -
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-01 15:42:45 [main] INFO  org.hibernate.Version -
+				HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-01 15:42:45 [main] INFO  o.h.annotations.common.Version -
+				HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-01 15:42:46 [main] INFO  org.hibernate.dialect.Dialect -
+				HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-01 15:42:49 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-01 15:42:49 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-01 15:42:51 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -
+				spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-01 15:42:51 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -
+				Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-07-01 15:42:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8080"]
+2021-07-01 15:42:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-01 15:42:52 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -
+				Context refreshed
+2021-07-01 15:42:52 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2021-07-01 15:42:52 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -
+				Scanning for api listing references
+2021-07-01 15:42:53 [main] INFO  com.api2.Api2Application -
+				Started Api2Application in 17.834 seconds (JVM running for 21.764)
+2021-07-01 16:14:50 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool -
+				HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s225ms941µs100ns).
+2021-07-01 16:33:17 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+				Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-01 16:33:18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+				Initializing Servlet 'dispatcherServlet'
+2021-07-01 16:33:25 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+				Completed initialization in 6725 ms
+2021-07-01 17:01:09 [http-nio-8080-exec-6] INFO  com.api2.service.ProductServiceImpl -
+				Called deleteProduct service
+2021-07-01 17:01:25 [http-nio-8080-exec-6] INFO  com.api2.service.ProductServiceImpl -
+				Product was not Deleted because product was not expired
+2021-07-01 17:01:25 [http-nio-8080-exec-6] INFO  com.api2.service.ProductServiceImpl -
+				Exited deleteProduct service
+2021-07-01 17:01:57 [http-nio-8080-exec-1] INFO  com.api2.service.ProductServiceImpl -
+				Called deleteProduct service
+2021-07-01 17:01:57 [http-nio-8080-exec-1] INFO  com.api2.service.ProductServiceImpl -
+				Product was not Deleted because product was not present
+2021-07-01 17:01:57 [http-nio-8080-exec-1] INFO  com.api2.service.ProductServiceImpl -
+				Exited deleteProduct service
+2021-07-01 17:02:15 [http-nio-8080-exec-2] INFO  com.api2.service.ProductServiceImpl -
+				Called deleteProduct service
+2021-07-01 17:02:19 [http-nio-8080-exec-2] INFO  com.api2.service.ProductServiceImpl -
+				Product was expired and Deleted
+2021-07-01 17:02:19 [http-nio-8080-exec-2] INFO  com.api2.service.ProductServiceImpl -
+				Exited deleteProduct service
+2021-07-01 17:19:32 [RMI TCP Connection(105)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -
+				Application shutdown requested.
+2021-07-01 17:19:37 [RMI TCP Connection(105)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -
+				Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-01 17:19:38 [RMI TCP Connection(105)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown initiated...
+2021-07-01 17:19:39 [RMI TCP Connection(105)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown completed.
