@@ -31,13 +31,13 @@ public class ProductServiceImpl implements ProductService {
 			}
 			return this.getResponse("SUCCESS", status, productResponse);
 		}
-		return this.getResponse("FAILED", "PRODUCT ABSENT", null);
+		return this.getResponse("FAILED", "PRODUCT NOT PRESENT", null);
 	}
 
 	public Response addProduct(Product product) {
 
 		if (repo.findByProductId(product.getProductId()).isPresent()) {
-			return this.getResponse("FAILED", "PRODUCT ALREADY PRESENT", null);
+			return this.getResponse("FAILED", "PRODUCT ALREADY EXIST", null);
 		}
 		ProductResponse productResponse = this.getProductResponse(repo.save(product));
 		return this.getResponse("SUCCESS", "PRODUCT SAVED", productResponse);
