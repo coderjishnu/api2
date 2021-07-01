@@ -51,7 +51,7 @@ public class ProductServiceImpl implements ProductService {
 		if (repo.findByProductId(product.getProductId()).isPresent()) {
 			log.info("Product was not added because it was already present");
 			log.info("Exited addProduct service");
-			return this.getResponse("FAILED", "PRODUCT ALREADY PRESENT", null);
+			return this.getResponse("FAILED", "PRODUCT ALREADY EXIST", null);
 		}
 		ProductResponse productResponse = this.getProductResponse(repo.save(product));
 		log.info("Product was added");

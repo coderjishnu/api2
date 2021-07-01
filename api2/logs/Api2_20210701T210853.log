@@ -1,0 +1,204 @@
+2021-07-01 21:08:54 [main] INFO  com.api2.Api2Application -
+				Starting Api2Application using Java 15.0.2 on DESKTOP-QNMA0KE with PID 2248 (C:\Users\JISHNU\git\api2\api2\target\classes started by JISHNU in C:\Users\JISHNU\git\api2\api2)
+2021-07-01 21:08:54 [main] INFO  com.api2.Api2Application -
+				No active profile set, falling back to default profiles: default
+2021-07-01 21:08:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-01 21:08:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+				Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interfaces.
+2021-07-01 21:08:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 8080 (http)
+2021-07-01 21:08:57 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-01 21:08:57 [main] INFO  o.a.catalina.core.StandardService -
+				Starting service [Tomcat]
+2021-07-01 21:08:57 [main] INFO  o.a.catalina.core.StandardEngine -
+				Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-07-01 21:08:58 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2021-07-01 21:08:58 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+				Root WebApplicationContext: initialization completed in 3665 ms
+2021-07-01 21:08:58 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Starting...
+2021-07-01 21:08:58 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Start completed.
+2021-07-01 21:08:59 [main] INFO  o.h.jpa.internal.util.LogHelper -
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-01 21:08:59 [main] INFO  org.hibernate.Version -
+				HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-01 21:08:59 [main] INFO  o.h.annotations.common.Version -
+				HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-01 21:08:59 [main] INFO  org.hibernate.dialect.Dialect -
+				HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-01 21:09:00 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-01 21:09:00 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-01 21:09:01 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -
+				spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-01 21:09:01 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -
+				Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-07-01 21:09:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8080"]
+2021-07-01 21:09:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-01 21:09:02 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -
+				Context refreshed
+2021-07-01 21:09:02 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2021-07-01 21:09:02 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -
+				Scanning for api listing references
+2021-07-01 21:09:02 [main] INFO  com.api2.Api2Application -
+				Started Api2Application in 8.942 seconds (JVM running for 10.633)
+2021-07-01 21:09:37 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+				Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-01 21:09:37 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+				Initializing Servlet 'dispatcherServlet'
+2021-07-01 21:09:37 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+				Completed initialization in 3 ms
+2021-07-01 21:10:22 [http-nio-8080-exec-9] INFO  com.api2.service.ProductServiceImpl -
+				Called getProductById service
+2021-07-01 21:10:22 [http-nio-8080-exec-9] INFO  com.api2.service.ProductServiceImpl -
+				Product is Present and Returned
+2021-07-01 21:10:22 [http-nio-8080-exec-9] INFO  com.api2.service.ProductServiceImpl -
+				Exited getProductById service
+2021-07-01 21:12:54 [http-nio-8080-exec-1] INFO  com.api2.service.ProductServiceImpl -
+				Called getProductById service
+2021-07-01 21:12:54 [http-nio-8080-exec-1] INFO  com.api2.service.ProductServiceImpl -
+				Product is Present and Returned
+2021-07-01 21:12:54 [http-nio-8080-exec-1] INFO  com.api2.service.ProductServiceImpl -
+				Exited getProductById service
+2021-07-01 21:13:57 [http-nio-8080-exec-3] INFO  com.api2.service.ProductServiceImpl -
+				Called deleteProduct service
+2021-07-01 21:13:57 [http-nio-8080-exec-3] INFO  com.api2.service.ProductServiceImpl -
+				Product was not Deleted because product was not present
+2021-07-01 21:13:57 [http-nio-8080-exec-3] INFO  com.api2.service.ProductServiceImpl -
+				Exited deleteProduct service
+2021-07-01 21:14:08 [http-nio-8080-exec-5] INFO  com.api2.service.ProductServiceImpl -
+				Called deleteProduct service
+2021-07-01 21:14:08 [http-nio-8080-exec-5] INFO  com.api2.service.ProductServiceImpl -
+				Product was not Deleted because product was not expired
+2021-07-01 21:14:08 [http-nio-8080-exec-5] INFO  com.api2.service.ProductServiceImpl -
+				Exited deleteProduct service
+2021-07-01 21:14:38 [http-nio-8080-exec-6] INFO  com.api2.service.ProductServiceImpl -
+				Called deleteProduct service
+2021-07-01 21:14:38 [http-nio-8080-exec-6] INFO  com.api2.service.ProductServiceImpl -
+				Product was not Deleted because product was not present
+2021-07-01 21:14:38 [http-nio-8080-exec-6] INFO  com.api2.service.ProductServiceImpl -
+				Exited deleteProduct service
+2021-07-01 21:17:27 [http-nio-8080-exec-7] INFO  com.api2.service.ProductServiceImpl -
+				Called addProduct Service
+2021-07-01 21:17:30 [http-nio-8080-exec-7] INFO  com.api2.service.ProductServiceImpl -
+				Product was added
+2021-07-01 21:17:30 [http-nio-8080-exec-7] INFO  com.api2.service.ProductServiceImpl -
+				Exited addProduct service
+2021-07-01 21:20:17 [http-nio-8080-exec-9] INFO  com.api2.service.ProductServiceImpl -
+				Called addProduct Service
+2021-07-01 21:20:17 [http-nio-8080-exec-9] INFO  com.api2.service.ProductServiceImpl -
+				Product was not added because it was already present
+2021-07-01 21:20:17 [http-nio-8080-exec-9] INFO  com.api2.service.ProductServiceImpl -
+				Exited addProduct service
+2021-07-01 21:22:43 [http-nio-8080-exec-1] INFO  com.api2.service.ProductServiceImpl -
+				Called updateProductService
+2021-07-01 21:22:43 [http-nio-8080-exec-1] INFO  com.api2.service.ProductServiceImpl -
+				Product was updated
+2021-07-01 21:22:43 [http-nio-8080-exec-1] INFO  com.api2.service.ProductServiceImpl -
+				Exited updateProduct service
+2021-07-01 21:23:32 [http-nio-8080-exec-2] INFO  com.api2.service.ProductServiceImpl -
+				Called updateProductService
+2021-07-01 21:23:32 [http-nio-8080-exec-2] INFO  com.api2.service.ProductServiceImpl -
+				Product was updated
+2021-07-01 21:23:32 [http-nio-8080-exec-2] INFO  com.api2.service.ProductServiceImpl -
+				Exited updateProduct service
+2021-07-01 21:23:52 [http-nio-8080-exec-3] INFO  com.api2.service.ProductServiceImpl -
+				Called updateProductService
+2021-07-01 21:23:52 [http-nio-8080-exec-3] INFO  com.api2.service.ProductServiceImpl -
+				Product was updated
+2021-07-01 21:23:52 [http-nio-8080-exec-3] INFO  com.api2.service.ProductServiceImpl -
+				Exited updateProduct service
+2021-07-01 21:27:28 [http-nio-8080-exec-10] INFO  com.api2.service.ProductServiceImpl -
+				Called addProduct Service
+2021-07-01 21:27:28 [http-nio-8080-exec-10] INFO  com.api2.service.ProductServiceImpl -
+				Product was added
+2021-07-01 21:27:28 [http-nio-8080-exec-10] INFO  com.api2.service.ProductServiceImpl -
+				Exited addProduct service
+2021-07-01 21:30:48 [http-nio-8080-exec-4] INFO  com.api2.service.ProductServiceImpl -
+				Called addProduct Service
+2021-07-01 21:30:48 [http-nio-8080-exec-4] INFO  com.api2.service.ProductServiceImpl -
+				Product was added
+2021-07-01 21:30:48 [http-nio-8080-exec-4] INFO  com.api2.service.ProductServiceImpl -
+				Exited addProduct service
+2021-07-01 21:31:22 [http-nio-8080-exec-7] INFO  com.api2.service.ProductServiceImpl -
+				Called addProduct Service
+2021-07-01 21:31:22 [http-nio-8080-exec-7] INFO  com.api2.service.ProductServiceImpl -
+				Product was not added because it was already present
+2021-07-01 21:31:22 [http-nio-8080-exec-7] INFO  com.api2.service.ProductServiceImpl -
+				Exited addProduct service
+2021-07-01 21:32:02 [http-nio-8080-exec-8] INFO  com.api2.service.ProductServiceImpl -
+				Called addProduct Service
+2021-07-01 21:32:02 [http-nio-8080-exec-8] INFO  com.api2.service.ProductServiceImpl -
+				Product was added
+2021-07-01 21:32:02 [http-nio-8080-exec-8] INFO  com.api2.service.ProductServiceImpl -
+				Exited addProduct service
+2021-07-01 21:35:07 [http-nio-8080-exec-1] INFO  com.api2.service.ProductServiceImpl -
+				Called deleteProduct service
+2021-07-01 21:35:07 [http-nio-8080-exec-1] INFO  com.api2.service.ProductServiceImpl -
+				Product was not Deleted because product was not present
+2021-07-01 21:35:07 [http-nio-8080-exec-1] INFO  com.api2.service.ProductServiceImpl -
+				Exited deleteProduct service
+2021-07-01 21:35:12 [http-nio-8080-exec-10] INFO  com.api2.service.ProductServiceImpl -
+				Called deleteProduct service
+2021-07-01 21:35:12 [http-nio-8080-exec-10] INFO  com.api2.service.ProductServiceImpl -
+				Product was not Deleted because product was not present
+2021-07-01 21:35:12 [http-nio-8080-exec-10] INFO  com.api2.service.ProductServiceImpl -
+				Exited deleteProduct service
+2021-07-01 21:35:33 [http-nio-8080-exec-2] INFO  com.api2.service.ProductServiceImpl -
+				Called deleteProduct service
+2021-07-01 21:35:33 [http-nio-8080-exec-2] INFO  com.api2.service.ProductServiceImpl -
+				Product was expired and Deleted
+2021-07-01 21:35:33 [http-nio-8080-exec-2] INFO  com.api2.service.ProductServiceImpl -
+				Exited deleteProduct service
+2021-07-01 21:36:36 [http-nio-8080-exec-6] INFO  com.api2.service.ProductServiceImpl -
+				Called deleteProduct service
+2021-07-01 21:36:36 [http-nio-8080-exec-6] INFO  com.api2.service.ProductServiceImpl -
+				Product was not Deleted because product was not present
+2021-07-01 21:36:36 [http-nio-8080-exec-6] INFO  com.api2.service.ProductServiceImpl -
+				Exited deleteProduct service
+2021-07-01 21:36:38 [http-nio-8080-exec-3] INFO  com.api2.service.ProductServiceImpl -
+				Called deleteProduct service
+2021-07-01 21:36:38 [http-nio-8080-exec-3] INFO  com.api2.service.ProductServiceImpl -
+				Product was not Deleted because product was not present
+2021-07-01 21:36:38 [http-nio-8080-exec-3] INFO  com.api2.service.ProductServiceImpl -
+				Exited deleteProduct service
+2021-07-01 21:36:40 [http-nio-8080-exec-4] INFO  com.api2.service.ProductServiceImpl -
+				Called deleteProduct service
+2021-07-01 21:36:40 [http-nio-8080-exec-4] INFO  com.api2.service.ProductServiceImpl -
+				Product was not Deleted because product was not present
+2021-07-01 21:36:40 [http-nio-8080-exec-4] INFO  com.api2.service.ProductServiceImpl -
+				Exited deleteProduct service
+2021-07-01 21:36:41 [http-nio-8080-exec-7] INFO  com.api2.service.ProductServiceImpl -
+				Called deleteProduct service
+2021-07-01 21:36:41 [http-nio-8080-exec-7] INFO  com.api2.service.ProductServiceImpl -
+				Product was not Deleted because product was not present
+2021-07-01 21:36:41 [http-nio-8080-exec-7] INFO  com.api2.service.ProductServiceImpl -
+				Exited deleteProduct service
+2021-07-01 21:36:41 [http-nio-8080-exec-8] INFO  com.api2.service.ProductServiceImpl -
+				Called deleteProduct service
+2021-07-01 21:36:41 [http-nio-8080-exec-8] INFO  com.api2.service.ProductServiceImpl -
+				Product was not Deleted because product was not present
+2021-07-01 21:36:41 [http-nio-8080-exec-8] INFO  com.api2.service.ProductServiceImpl -
+				Exited deleteProduct service
+2021-07-01 21:36:42 [http-nio-8080-exec-9] INFO  com.api2.service.ProductServiceImpl -
+				Called deleteProduct service
+2021-07-01 21:36:42 [http-nio-8080-exec-9] INFO  com.api2.service.ProductServiceImpl -
+				Product was not Deleted because product was not present
+2021-07-01 21:36:42 [http-nio-8080-exec-9] INFO  com.api2.service.ProductServiceImpl -
+				Exited deleteProduct service
+2021-07-01 21:39:51 [RMI TCP Connection(34)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -
+				Application shutdown requested.
+2021-07-01 21:39:51 [RMI TCP Connection(34)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -
+				Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-01 21:39:51 [RMI TCP Connection(34)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown initiated...
+2021-07-01 21:39:51 [RMI TCP Connection(34)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown completed.
