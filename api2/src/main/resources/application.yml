@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 0
   
 spring:
   datasource:
@@ -10,3 +10,15 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+  application:
+    name: api-2
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    hostname: localhost
+    instance-id: ${spring.application.name}:${random.int}
+ 
+ 
