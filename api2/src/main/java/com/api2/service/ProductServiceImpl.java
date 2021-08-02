@@ -89,7 +89,7 @@ public class ProductServiceImpl implements ProductService {
 				return this.getResponse("SUCCESS", "PRODUCT EXPIRED AND DELETED", null); // Product Expired and deleted
 			}
 			log.info("Product was not Deleted because product was not expired");
-			log.info("Exited deleteProduct service");
+			log.info("Exit from deleteProduct service");
 			return this.getResponse("FAILED", "PRODUCT NOT EXPIRED", null); // Product not expired
 		}
 		log.info("Product was not Deleted because product was not present");
