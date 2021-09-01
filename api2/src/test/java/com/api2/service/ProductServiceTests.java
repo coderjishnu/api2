@@ -19,33 +19,31 @@
 //import org.springframework.test.context.junit4.SpringRunner;
 //
 //import com.api2.model.Product;
-//import com.api2.repository.ProductRepoTest;
-//import com.api2.schema.ProductResponseTest;
+//import com.api2.repository.ProductRepo;
+//import com.api2.schema.ProductClone;
 //import com.api2.schema.Response;
-//import com.api2.schema.ResponseTest;
 //
 //@RunWith(SpringRunner.class)
 //@SpringBootTest
-//class ProductServiceTest {
+//class ProductServiceTests {
 //
 //	@Autowired
 //	private ProductService service;
 //
-//
 //	@MockBean
-//	private ProductRepoTest repository;
+//	private ProductRepo repository;
 //
 //	Product product;
-//	ResponseTest response;
-//	ProductResponseTest productResponse;
+//	Response response;
+//	ProductClone productClone;
 //
-//	private ProductResponseTest getProductResponse(Product product) {
-//		ProductResponseTest productResponse = new ProductResponseTest();
-//		productResponse.setId(product.getId());
-//		productResponse.setProductExpiryDate(product.getProductExpiryDate());
-//		productResponse.setProductId(product.getProductId());
-//		productResponse.setProductName(product.getProductName());
-//		return productResponse;
+//	private ProductClone getProductClone(Product product) {
+//		ProductClone productClone = new ProductClone();
+//		productClone.setCloneId(product.getId());
+//		productClone.setCloneProductExpiryDate(product.getProductExpiryDate().toString());
+//		productClone.setCloneProductId(product.getProductId());
+//		productClone.setCloneProductName(product.getProductName());
+//		return productClone;
 //
 //	}
 //
@@ -57,20 +55,19 @@
 //		product.setProductName("Noodles");
 //		product.setProductExpiryDate(Date.valueOf(LocalDate.now()));
 //
-//		response = new ResponseTest();
+//		response = new Response();
 //		response.setResponseType("SUCCESS");
 //		response.setResponseMessage("NOT EXPIRED");
-//		response.setProductResponse(this.getProductResponse(product));
+//		response.setProductClone(this.getProductClone(product));
 //	}
 //
 //	@Test
 //	public void getProductByIdTest() {
 //
-//
 //		doReturn(Optional.of(product)).when(repository).findByProductId("G1");
 //		Response productResponse = service.getProductById("G1");
 //		verify(repository, times(1)).findByProductId("G1");
-//		
+//
 //		assertTrue(repository.findByProductId("G1").isPresent());
 //		assertNotNull(productResponse);
 //		assertEquals("NOT EXPIRED", productResponse.getResponseMessage());
@@ -90,7 +87,7 @@
 //	public void updateProductTest() {
 //		product.setProductName("Burger");
 //		response.setResponseMessage("PRODUCT UPDATED");
-//		response.setProductResponse(this.getProductResponse(product));
+//		response.setProductClone(this.getProductClone(product));
 //		when(repository.findByProductId(product.getProductId())).thenReturn(Optional.of(product));
 //		when(repository.save(product)).thenReturn(product);
 //		Response productResponse = service.updateProduct(product);
@@ -102,7 +99,7 @@
 //	public void deleteProductTest() {
 //		response.setResponseType("FAILED");
 //		response.setResponseMessage("PRODUCT NOT EXPIRED");
-//		response.setProductResponse(null);
+//		response.setProductClone(null);
 //		when(repository.findByProductId(product.getProductId())).thenReturn(Optional.of(product));
 //		Response productResponse = service.deleteProduct(product.getProductId());
 //		assertNotNull(productResponse);
