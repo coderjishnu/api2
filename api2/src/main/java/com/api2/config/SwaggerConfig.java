@@ -11,13 +11,18 @@ import springfox.documentation.service.ApiInfo;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
+/**
+ * 
+ * SwaggerConfig Class.
+ *
+ */
 @Configuration
 public class SwaggerConfig {
 
 	@Bean
 	public ApiInfo apiInfo() {
 		ApiInfoBuilder apiBuilder = new ApiInfoBuilder();
-		apiBuilder.title("Api2").version("1.0").license("(c) Springboot").description("Endpoints used in Api2");
+		apiBuilder.title("Api2").version("1.0").license("(c) Livin").description("List of All Endpoints used in Api2");
 		return apiBuilder.build();
 	}
 

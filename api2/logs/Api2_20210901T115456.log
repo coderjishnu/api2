@@ -1,0 +1,34 @@
+2021-09-01 11:54:57 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper -
+				Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.api2.controller.Api2ControllerTests], using SpringBootContextLoader
+2021-09-01 11:54:57 [main] INFO  o.s.t.c.s.AbstractContextLoader -
+				Could not detect default resource locations for test class [com.api2.controller.Api2ControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-09-01 11:54:57 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils -
+				Could not detect default configuration classes for test class [com.api2.controller.Api2ControllerTests]: Api2ControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-09-01 11:54:57 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Found @SpringBootConfiguration com.api2.Api2Application for test class com.api2.controller.Api2ControllerTests
+2021-09-01 11:54:57 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper -
+				Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-09-01 11:54:57 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper -
+				Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4b6166aa, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@a77614d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4fd4cae3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4a067c25, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@a1217f9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3bde62ff, org.springframework.test.context.transaction.TransactionalTestExecutionListener@523424b5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2baa8d82, org.springframework.test.context.event.EventPublishingTestExecutionListener@319dead1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@791cbf87, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@a7e2d9d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@754777cd, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2b52c0d6, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@372ea2bc, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4cc76301]
+2021-09-01 11:54:59 [background-preinit] INFO  o.h.validator.internal.util.Version -
+				HV000001: Hibernate Validator 6.2.0.Final
+2021-09-01 11:54:59 [main] INFO  c.a.controller.Api2ControllerTests -
+				Starting Api2ControllerTests using Java 15.0.2 on DESKTOP-QNMA0KE with PID 12388 (started by JISHNU in C:\Users\JISHNU\git\api2\api2)
+2021-09-01 11:54:59 [main] INFO  c.a.controller.Api2ControllerTests -
+				No active profile set, falling back to default profiles: default
+2021-09-01 11:55:03 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -
+				Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-01 11:55:05 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext -
+				Initializing Spring TestDispatcherServlet ''
+2021-09-01 11:55:05 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				Initializing Servlet ''
+2021-09-01 11:55:05 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				Completed initialization in 3 ms
+2021-09-01 11:55:05 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -
+				Context refreshed
+2021-09-01 11:55:05 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2021-09-01 11:55:05 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -
+				Scanning for api listing references
+2021-09-01 11:55:05 [main] INFO  c.a.controller.Api2ControllerTests -
+				Started Api2ControllerTests in 7.039 seconds (JVM running for 10.586)

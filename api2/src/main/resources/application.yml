@@ -1,18 +1,15 @@
 server:
   port: 0
-  
 spring:
+  application:
+    name: api-2
   datasource:
-    url: jdbc:mysql://localhost:3306/product
+    url: jdbc:mysql://localhost:3306/testdb
     username: root
-    password: root123
-    
+    password: root
   jpa:
     hibernate:
       ddl-auto: update
-  application:
-    name: api-2
-
 eureka:
   client:
     register-with-eureka: true
@@ -20,5 +17,3 @@ eureka:
   instance:
     hostname: localhost
     instance-id: ${spring.application.name}:${random.int}
- 
- 

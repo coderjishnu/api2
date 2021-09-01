@@ -13,7 +13,7 @@ import com.api2.model.Product;
  *
  */
 @Repository
-public interface ProductRepo extends JpaRepository<Product, Integer> {
+public interface ProductRepoTest extends JpaRepository<Product, Integer> {
 
 	/**
 	 * Returns an Optional product.
